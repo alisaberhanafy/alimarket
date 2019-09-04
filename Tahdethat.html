@@ -1,0 +1,93 @@
+<html dir="rtl" lang="ar-EG">
+<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>Ali Market</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<table width="100%" height="100%">
+		<tr>
+			<td valign="center" align="center">
+				<form class="frm1" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>	  
+					<!--<input type="text" placeholder="بحث عن .." name="search2"><br>-->
+					<a href="index.html"><img src="img/logo.png" style="max-height:155px;" /></a><br><br>
+					<div class="dropdown">
+					 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+						 <span style="font-size: 9px" >اهلا ومرحبا بك  - تابع التطورات من هنا</span>
+					     <span class="caret"></span></button>
+						<ul class="dropdown-menu" style="text-align: right ; font-size: 11px;" >
+							<input class="form-control" id="myInput" type="text" placeholder="إبحث..">
+							<li><a href="index.html">الصفحة الرئيسية</a></li>
+							<li><a href="#">.................................................</a></li>
+							
+							<li><a href="#" onclick="noyet8()" >05/09/2019</a></li>
+							<li><a href="#" onclick="noyet7()" >03/09/2019</a></li>
+							<li><a href="#" onclick="noyet6()" >01/09/2019</a></li>
+							<li><a href="#" onclick="noyet5()" >31/08/2019</a></li>
+							<li><a href="#" onclick="noyet4()" >30/08/2019</a></li>
+							<li><a href="#" onclick="noyet3()" >29/08/2019</a></li>
+							<li><a href="#" onclick="noyet2()" >28/08/2019</a></li>
+							<li><a href="#" onclick="noyet1()" >25/08/2019</a></li>
+							
+							<script  >
+								function noyet8() {
+								  alert("حدث في (05/09/2019) تم إنشاء خدمة الدعم الفني - تم إنشاء جروب الفيس بوك - تم إنشاء صفحة الفيس بوك - تم تخصيص الأرقام الخاصة بالدعم الفني بمجرد الضغط على الرقم يكتب تلقائيا في سجل الهاتف اللخاص بك - تم تخصيص أرقام الواتس الخاصة بالدعم الفني .");
+								}
+								function noyet7() {
+								  alert("تم إنشاء خدمة الدعم الفني - تم إنشاء جروب الفيس بوك - تم إنشاء صفحة الفيس بوك .");
+								}
+								function noyet6() {
+								  alert("ستكون الخدمة متوافره في الخارجة خلال الأربع شهور القادمة .");
+								}
+								function noyet5() {
+								  alert("ستكون الخدمة متوافره في الخارجة خلال الأربع شهور القادمة .");
+								}
+								function noyet4() {
+								  alert("ستكون الخدمة متوافره في الخارجة خلال الأربع شهور القادمة .");
+								}
+								function noyet3() {
+								  alert("ستكون الخدمة متوافره في الخارجة خلال الأربع شهور القادمة .");
+								}
+								function noyet2() {
+								  alert("ستكون الخدمة متوافره في الخارجة خلال الأربع شهور القادمة .");
+								}
+								function noyet1() {
+								  alert("ستكون الخدمة متوافره في الخارجة خلال الأربع شهور القادمة .");
+								}
+								</script>
+
+						  </ul>
+					</div>
+					<img src="img/ecom.png" style="max-height:155px;" />
+
+					
+
+		<tr>
+			<td style="height: 20px;" align="center" valign="center">
+				<font style="background:rgba(0,0,0,0.4);color: #FFF;font-size: 11px;">
+					صمم بواسطة : علي صابر حنفي.</a>
+					<b style="color: #FFFF00; font-size: 9px;"><br />مصر - الوادي الجديد - الداخلة - عزب القصر </b>
+				</font>
+			</td>
+		</tr>
+
+	</table>
+	<script>
+			$(document).ready(function(){
+			  $("#myInput").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$(".dropdown-menu li").filter(function() {
+				  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			  });
+			});
+			</script>
+
+</body>
+</html>

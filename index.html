@@ -1,0 +1,62 @@
+<html dir="rtl" lang="ar-EG">
+<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>Ali Market</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<table width="100%" height="100%">
+		<tr>
+			<td valign="center" align="center">
+				<form class="frm1" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>	  
+					<!--<input type="text" placeholder="بحث عن .." name="search2"><br>-->
+					<a href="index.html"><img src="img/logo.png" style="max-height:155px;" /></a><br><br>
+					<div class="dropdown">
+					 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+						 <span style="font-size: 9px" >اهلا ومرحبا بك عميلنا - البداية من هنا</span>
+					     <span class="caret"></span></button>
+						<ul class="dropdown-menu" style="text-align: right ; font-size: 11px;">
+							<input class="form-control" id="myInput" type="text" placeholder="إبحث..">
+							<li><a href="Efham1.html">إفــهــم</a></li>
+							<li><a href="oursirvises.html">خدمات الموقع</a></li>
+							<li><a href="mabeaat.html">السلع والمبيعات</a></li>
+							<li><a href="Tahdethat.html">تابع تحديثات الموقع</a></li>
+							<li><a href="twasal.html">تواصل مع الدعم الفني</a></li>
+							<li><a href="quraan.html">الإستماع الى القرآن الكريم</a></li>
+							<li><a href="ezaaaquraan.html">الإستماع الى إذاعة القرآن الكريم</a></li>
+
+						  </ul>
+					</div>
+					<img src="img/ecom.png" style="max-height:155px;" />
+
+					
+
+		<tr>
+			<td style="height: 20px;" align="center" valign="center">
+				<font style="background:rgba(0,0,0,0.4);color: #FFF;font-size: 11px;">
+					صمم بواسطة : علي صابر حنفي.</a>
+					<b style="color: #FFFF00; font-size: 9px;"><br />مصر - الوادي الجديد - الداخلة - عزب القصر </b>
+				</font>
+			</td>
+		</tr>
+
+	</table>
+	<script>
+			$(document).ready(function(){
+			  $("#myInput").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$(".dropdown-menu li").filter(function() {
+				  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			  });
+			});
+			</script>
+
+</body>
+</html>
