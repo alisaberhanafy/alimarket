@@ -1,0 +1,132 @@
+<html dir="rtl" lang="ar-EG">
+<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="dist/attention.css" rel="stylesheet">
+		<title>Ali Market</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+		<script src="dist/attention.js"></script>
+
+
+	<table width="100%" height="100%">
+		<tr>
+			<td valign="center" align="center">
+				<form class="frm1" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>	  
+					<!--<input type="text" placeholder="بحث عن .." name="search2"><br>-->
+					<a href="../index.html"><img src="../img/logo.png" style="max-height:155px;" /></a><br><br>
+					<div class="dropdown">
+					 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+						<span style="font-size: 9px" >مرحبا في خدمة السيرة الذاتية - القائمة </span>
+						 <span class="caret"></span></button>
+							<ul class="dropdown-menu" style="text-align: right ; font-size: 11px;" >
+							<input class="form-control" id="myInput" type="text" placeholder="إبحث..">
+							<li><a href="index.html">الصفحة الرئيسية</a></li>
+							<li><a href="../oursirvises.html">الى الصفحة السابقة</a></li>
+							<li><a href="../Tahdethat.html">تابع تحديثات الموقع</a></li>
+							<li><a href="#">.................................................</a></li>
+							<li><a href="#"class="button new-alert"> شرح كتابي للخدمة </a></li>
+							<li><a href="#"onclick="lightbox_open();">شرح فيديو للخدمة</a></li>
+							<li><a href="#"class="button new-ali">معلومات عن الخدمة</a></li>
+							<li><a href="#"class="button new-alert">إمتلك تطبيق ارسال واستقبال الأموال مجانا</a></li>
+						  </ul>	 
+					</div>
+					<img src="../img/ecom.png" style="max-height:155px;" />
+					<script>
+
+							const demo = document.querySelector('.demo');
+				
+							document.querySelector('.new-alert').addEventListener('click', function() {
+								new Attention.Alert({
+									title: 'شرح كتابي لطلب الخدمة',
+									content: 'ثمن الخدمه (15جنيها) ملف (بي دي اف) يتم إرسالها للعميل عن طريق الايميل او اي موقع من مواقع التواصل الإجتماعي ......................................................................................... فقط يتم إرسال ثمن الخدمة عن طريق برنامج الخاص بإرسال وإستلام الأموال وتسديد جميع الفواتير الخاص بالموقع ................................................................................................................  قم بنسخ كود الخدمةالموجود بالقائمة وقم بتصوير فاتورة إرسال المبلغ المطلوب للخدمة وأرسلهم للدعم الفني عن طريق روابط التواصل الموجوده بالصفحة ................................................................................. (ملحوظة) إذا لم تعجبك الخدمة سيتم إسترجاع أموالك على الفور والموقع يتحمل المسئوليه الكاملة في إسترجاع أموالك عميلنا العزيز. ',
+									afterClose: () => {
+										demo.innerHTML += '<h4>Alert was closed</h4>';
+									}
+								});
+							});
+
+							document.querySelector('.new-ali').addEventListener('click', function() {
+								new Attention.Alert({
+									title: 'شرح فيديو لطلب الخدمة',
+									content:'سعر الخدمة : 15 جنيها .................................................................. يمكنك أن تختار من القوالب المخصصه ........................',
+									afterClose: () => {
+										demo.innerHTML += '<h4>Alert was closed</h4>';
+									}
+								});
+							});
+
+
+
+							</script>
+							
+							
+
+							<div id="light">
+							<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+							<iframe id="VisaChipCardVideo"width="240" height="160" src="https://www.youtube.com/embed/lYd7iHcVHVE" frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+								</iframe>
+							</div>
+			
+
+					
+							<script>
+								window.document.onkeydown = function(e) {
+									if (!e) {
+										e = event;
+									}
+									if (e.keyCode == 27) {
+										lightbox_close();
+									}
+									}
+
+									function lightbox_open() {
+									var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+									window.scrollTo(0, 0);
+									document.getElementById('light').style.display = 'block';
+									document.getElementById('fade').style.display = 'block';
+									lightBoxVideo.play();
+									}
+
+									function lightbox_close() {
+									var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+									document.getElementById('light').style.display = 'none';
+									document.getElementById('fade').style.display = 'none';
+									lightBoxVideo.pause();
+									}
+							</script>
+							
+							
+
+					
+
+		<tr>
+			<td style="height: 20px;" align="center" valign="center">
+				<font style="background:rgba(0,0,0,0.4);color: #FFF;font-size: 11px;">
+					صمم بواسطة : علي صابر حنفي.</a>
+					<b style="color: #FFFF00; font-size: 9px;"><br />مصر - الوادي الجديد - الداخلة - عزب القصر </b>
+				</font>
+			</td>
+		</tr>
+
+	</table>
+	<script>
+			$(document).ready(function(){
+			  $("#myInput").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$(".dropdown-menu li").filter(function() {
+				  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			  });
+			});
+			</script>
+
+</body>
+</html>
