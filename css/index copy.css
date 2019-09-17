@@ -53,18 +53,17 @@
     color: grey;
   }
   
-  /*.button {
-    font-size: 8px;
+  .button {
     border: none;
     outline: 0;
     display: inline-block;
     padding: 5px;
     color: white;
-    background-color:red;
+    background-color: #000;
     text-align: center;
     cursor: pointer;
-    width: 50%;
-  }*/
+    width: 40%;
+  }
   
   .button:hover {
     background-color: #555;
@@ -209,10 +208,9 @@
       border-color:orangered;
       font-size: 11px;
     }.btn-new4{
-        background-color:rgb(185, 9, 216);
-        border-color:rgb(197, 10, 243);
-        font-size: 15px;
-        padding: 1%;
+        background-color:rgb(217, 0, 255);
+        border-color:rgb(217, 0, 255);
+        font-size: 11px;
 
     }.btn-sel{
         background-color:#5bc0de;

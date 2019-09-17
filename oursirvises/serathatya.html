@@ -25,21 +25,59 @@
 					 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
 						<span style="font-size: 9px" >مرحبا في خدمة السيرة الذاتية - القائمة </span>
 						 <span class="caret"></span></button>
-							<ul class="dropdown-menu" style="text-align: right ; font-size: 11px;" >
+							<ul class="dropdown-menu" style="text-align: right ; font-size: 10px;" >
 							<input class="form-control" id="myInput" type="text" placeholder="إبحث..">
-							<li><a href="index.html">الصفحة الرئيسية</a></li>
+							<li><a href="../serch.html">ابحث في الموقع</a></li>
+							<li><a href="../index.html">الصفحة الرئيسية</a></li>
 							<li><a href="../oursirvises.html">الى الصفحة السابقة</a></li>
 							<li><a href="../Tahdethat.html">تابع تحديثات الموقع</a></li>
 							<li><a href="#">.................................................</a></li>
 							<li><a href="#"class="button new-alert"> شرح كتابي للخدمة </a></li>
 							<li><a href="#"onclick="lightbox_open();">شرح فيديو للخدمة</a></li>
 							<li><a href="#"class="button new-ali">معلومات عن الخدمة</a></li>
-							<li><a href="#"class="button new-alert">إمتلك تطبيق ارسال واستقبال الأموال مجانا</a></li>
-						  </ul>	 
-					</div>
-					<img src="../img/ecom.png" style="max-height:155px;" />
-					<script>
+							<li><a href="#"class="button new-alert"><p style="color:blue">عن تطبيق المعاملات</p></a></li>
+							</ul>	 
+							</div>
+							<h1 style="font-size: 10px; color: rgb(252, 15, 153);"  >عروض عن الخدمة :</h1>
+							
+							<!--Slide show start-->
+							<script>
+								var i = 0; // Start point
+								var images = [];
+								var time = 4000;
+							
+								// Image List
+								images[0] = 'photo/serathatya1.png';
+								images[1] = 'photo/serathatya2.png';
+								images[2] = 'photo/serathatya3.png';
+								images[3] = 'photo/serathatya4.png';
+								images[4] = 'photo/serathatya5.png';
+								
+							
+								// Change Image
+								function changeImg(){
+									document.slide.src = images[i];
+							
+									if(i < images.length - 1){
+										i++;
+									} else {
+										i = 0;
+									}
+							
+									setTimeout("changeImg()", time);
+								}
+							
+								window.onload = changeImg;
+							
+							</script>
+							
+							<img name="slide" width="220" height="120" >
+					
+							<!--Slide show End-->
 
+
+
+					<script>
 							const demo = document.querySelector('.demo');
 				
 							document.querySelector('.new-alert').addEventListener('click', function() {
@@ -67,7 +105,7 @@
 							</script>
 							
 							
-
+							<!--كود الفيديو-->
 							<div id="light">
 							<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
 							<iframe id="VisaChipCardVideo"width="240" height="160" src="https://www.youtube.com/embed/lYd7iHcVHVE" frameborder="0"
@@ -102,6 +140,7 @@
 									lightBoxVideo.pause();
 									}
 							</script>
+							<!--نهاية كود الفيديو-->
 							
 							
 
