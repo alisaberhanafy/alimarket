@@ -1,0 +1,190 @@
+<html dir="rtl" lang="ar-EG">
+<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../../css/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="dist/attention.css" rel="stylesheet">
+		<title>Ali Market</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+		<script src="dist/attention.js"></script>
+
+
+	<table width="100%" height="100%">
+		<tr>
+			<td valign="center" align="center">
+				<form class="frm1" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>	  
+					<!--<input type="text" placeholder="بحث عن .." name="search2"><br>-->
+					<a href="../../index.html"><img src="../../img/logo.png" style="max-height:155px;" /></a><br><br>
+					<div class="dropdown">
+					 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+						<span style="font-size: 9px" >أهلا و مرحبا عميلنا العزيز - إختر من القائمة </span>
+						 <span class="caret"></span></button>
+							<ul class="dropdown-menu" style="text-align: right ; font-size: 10px;" >
+							<input class="form-control" id="myInput" type="text" placeholder="إبحث..">
+							<li><a href="../../serch.html">ابحث في الموقع</a></li>
+							<li><a href="../../index.html">الـــصفحة الرئيسية</a></li>
+							<li><a href="../1000-100.html">الى الصفحة السابقة</a></li>
+							<li><a href="../../Tahdethat.html">تـــابع تـــحديثــــات الموقع</a></li>
+							<li><a href="#">.................................................................</a></li>
+							<li><a href="#"class="button new-alert"><span style="color:blue">عن تطبيق المعاملات</span></a></li>
+							<li><a href="#"class="button new-alert"> وصــف كتـابي للـــسلعة </a></li>
+							<li><a href="#"onclick="lightbox_open();">شرح فيديو لمواصفات السلعة</a></li>
+							<li><a href="#"class="button new-ali">شرح فيديو عن كيفية شراء السلعة</a></li>
+							<li><a href="#"class="button new-ali">مـــــعلومات عــــــــــــــن مــــــتطلبات الشراء</a></li>
+							<li><a href="#"class="button new-ali">قـــــــــــــــــــــم بــــــشـــــــراء الــــــسلــــــعــــــة الآن</a></li>
+							
+							</ul>	 
+							</div>
+							<h1 style="font-size: 10px; color: rgb(141, 27, 218);"  ><a href="https://www.youtube.com/watch?v=UWVKYYgsL6w" target="_blank">الصور والعرض عن السلعة على اليوتيوب :</a></h1>
+							
+							<!--Slide show start
+							<script>
+								var i = 0; // Start point
+								var images = [];
+								var time = 4000;
+							
+								// Image List
+								images[0] = 'photo/serathatya1.png';
+								images[1] = 'photo/serathatya2.png';
+								images[2] = 'photo/serathatya3.png';
+								images[3] = 'photo/serathatya4.png';
+								images[4] = 'photo/serathatya5.png';
+								
+							
+								// Change Image
+								function changeImg(){
+									document.slide.src = images[i];
+							
+									if(i < images.length - 1){
+										i++;
+									} else {
+										i = 0;
+									}
+							
+									setTimeout("changeImg()", time);
+								}
+							
+								window.onload = changeImg;
+							
+							</script>
+							
+							<img name="slide" width="220" height="120" >
+					
+							Slide show End-->
+
+						<iframe width="215" style="background:rgb(210, 7, 236)" height="140" src="https://www.youtube.com/embed/UWVKYYgsL6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+						 
+
+
+
+
+
+					<script>
+							const demo = document.querySelector('.demo');
+				
+							document.querySelector('.new-alert').addEventListener('click', function() {
+								new Attention.Alert({
+									title: 'شرح كتابي للموبايل',
+									content: ' حجم الشاشة: شاشة تي اف تي 1.8 بوصة ..............................................................................................................................................................................................................................  يمكن اضافة بطاقة ذاكرة اس دي ميكرو بمساحة تصل الى 16 جيجابايت ..............................................................................................................................................................................................................................  كاميرا أمامية وخلفية بدقة كاميرا في جي ايه. .............................................................................................................................................................................................................................. يدعم الهاتف خاصية راديو اف ام. .............................................................................................................................................................................................................................. الجهاز به مكان شريحتين اتصال. .............................................................................................................................................................................................................................. بطارية الموبايل 1000 ملي امبير على الساعة.',
+									afterClose: () => {
+										demo.innerHTML += '<h4>Alert was closed</h4>';
+									}
+								});
+							});
+
+							document.querySelector('.new-ali').addEventListener('click', function() {
+								new Attention.Alert({
+									title: 'معلومات المنتج',
+									content:'وزن الحزمة : 176 grams ............................................................................................. العلامة التجارية : انيرجايزر. ........................................................................................ نوع نظام التشغيل : غير متاح. .................................................................................. سعة التخزين : 8 ميجابايت .................................................................... عدد مداخل ال SIM : شريحتين. ..................................................................... فئة الجهاز : هواتف خلوية. ................................................................................. بنية شبكات الهاتف المحمول : 2 جي. ........................................................................... العلامة التجارية للشريحة : ميديا تيك. .......................................................................... رقم الموديل : E10 Plus. ................................................................................ قدرة البطارية بـ(ماه) : 1000 - 2000 ميلي امبير. ....................................................................... نوع معرف المنتج الخارجي : EAN-13. ....................................................................... معرف المنتج الخارجي : 3492548224319. ................................................................................... الرقم المميز للسلعة : 2724711173751. ............................................................................... دقة الكاميرا الخلفية : في جي ايه. ............................................................................... حجم الشاشة (انش) : 1.8 انش. ...................................................................... اللون : أسود. .................................................................................. شحن سريع : غير متاح. ........................................................................................ حجم ذاكرة الرام : اقل من 256 ميجابايت. ......................................................................................... هل يتطلب هذا المنتج بطارية او يحتوي بطارية : نعم.',
+									afterClose: () => {
+										demo.innerHTML += '<h4>Alert was closed</h4>';
+									}
+								});
+							});
+
+
+
+							</script>
+							
+									<!--كود الفيديو المخفي-->
+							<div id="light">
+								<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+								<iframe  width="240" height="160" src="https://www.youtube.com/embed/lYd7iHcVHVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+
+
+					
+							<script>
+								window.document.onkeydown = function(e) {
+									if (!e) {
+										e = event;
+									}
+									if (e.keyCode == 27) {
+										lightbox_close();
+									}
+									}
+
+									function lightbox_open() {
+									var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+									window.scrollTo(0, 0);
+									document.getElementById('light').style.display = 'block';
+									document.getElementById('fade').style.display = 'block';
+									lightBoxVideo.play();
+									}
+
+									function lightbox_close() {
+									var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+									document.getElementById('light').style.display = 'none';
+									document.getElementById('fade').style.display = 'none';
+									lightBoxVideo.pause();
+									}
+							</script>
+							<!--نهاية كود الفيديو-->
+							
+							
+
+					
+
+		<tr>
+			<td style="height: 20px;" align="center" valign="center">
+				<font style="background:rgba(0,0,0,0.4);color: #FFF;font-size: 11px;">
+					صمم بواسطة : إيزي لايف.</a>
+					<b style="color: #FFFF00; font-size: 9px;"><br />مصر - الوادي الجديد - الداخلة - عزب القصر </b>
+				</font>
+			</td>
+		</tr>
+
+	</table>
+	<script>
+			$(document).ready(function(){
+			  $("#myInput").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$(".dropdown-menu li").filter(function() {
+				  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			  });
+			});
+			</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5d8ab1796c1dde20ed0347bc/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+</body>
+</html>
